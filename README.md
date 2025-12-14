@@ -1,4 +1,4 @@
-<p align="center">Archivist & Project Degrader</p>
+<p align="center"><strong>Archivist & Project Degrader</strong></p>
 
 <p align="center">
   <strong>A comprehensive suite for cel animation restoration: specialized AI models and the physics-based degradation simulator used to train them.</strong>
