@@ -1,0 +1,151 @@
+{
+    "name": "Custom",
+    "seed": 42,
+    "flat_areas_enabled": true,
+    "flat_area_threshold": [
+        2.4000000000000004,
+        2.8000000000000003
+    ],
+    "flat_area_defect_bias": [
+        1.3,
+        1.6
+    ],
+    "flat_area_grain_bias": [
+        1.3,
+        1.6
+    ],
+    "flat_area_exposure": [
+        0.0,
+        0.0
+    ],
+    "grp_scratches": true,
+    "scratches_probability": 0.09,
+    "scratches_count": [
+        5.0,
+        12.0
+    ],
+    "scratches_size": [
+        10.0,
+        35.0
+    ],
+    "scratches_intensity": [
+        -0.07,
+        0.07
+    ],
+    "grp_debris": false,
+    "debris_probability": 0.51,
+    "debris_count": [
+        5.0,
+        15.0
+    ],
+    "debris_intensity": [
+        0.11,
+        0.25
+    ],
+    "micro_defects_probability": 1.0,
+    "micro_dust_count": [
+        10.0,
+        38.0
+    ],
+    "micro_smudge_count": [
+        2.0,
+        20.0
+    ],
+    "micro_intensity": [
+        0.13,
+        0.3
+    ],
+    "grp_stains": true,
+    "large_stain_probability": 0.05,
+    "large_stain_strength_range": [
+        0.09,
+        0.14
+    ],
+    "fine_speckle_probability": 0.13,
+    "fine_speckle_strength_range": [
+        0.09,
+        0.16
+    ],
+    "grp_geo": true,
+    "crease_probability": 0.72,
+    "crease_line_spacing_range": [
+        10.0,
+        30.0
+    ],
+    "crease_displacement_range": [
+        1.0,
+        2.0
+    ],
+    "crease_darken_strength": [
+        0.06,
+        0.31
+    ],
+    "crease_color_shift_strength": [
+        0.1,
+        0.16
+    ],
+    "emulsion_shift_probability": 0.51,
+    "emulsion_shift_range": [
+        0.0,
+        2.0
+    ],
+    "grp_emul": true,
+    "emulsion_degradation_probability": 0.43,
+    "emulsion_degradation_strength": [
+        21.0,
+        45.0
+    ],
+    "emulsion_degradation_mix_ratio": [
+        0.22,
+        0.36
+    ],
+    "grp_grain": true,
+    "grain_enabled": true,
+    "grain_strength_range": [
+        4.0,
+        7.0
+    ],
+    "grain_emphasis_on_color": [
+        0.0,
+        0.0
+    ],
+    "grain_monochrome_probability": 0.41,
+    "texture_trap_probability": 0.16,
+    "texture_trap_intensity": [
+        0.04,
+        0.08
+    ],
+    "grp_banding": false,
+    "banding_probability": 0.72,
+    "banding_levels": [
+        97.0,
+        142.0
+    ],
+    "banding_opacity": [
+        0.54,
+        0.86
+    ],
+    "grp_post": true,
+    "blur_enabled": false,
+    "blur_probability": 0.0,
+    "blur_range": [
+        0.0,
+        0.0
+    ],
+    "mpeg_probability": 0.2,
+    "mpeg_quality_range": [
+        4.0,
+        8.0
+    ],
+    "extreme_mode": false,
+    "extreme_mode_probability": 0.5,
+    "extreme_strength_range": [
+        1.48,
+        3.0700000000000003
+    ],
+    "extreme_cast_range": [
+        1.18,
+        2.99
+    ],
+    "color_cast_probability": 0.5
+}
